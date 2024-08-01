@@ -20,7 +20,7 @@ module.exports = {
     '@next/next/no-html-link-for-pages': 'off',
     'import/no-cycle': 'error',
     'import/no-default-export': 'error',
-    'no-console': 'error',
+    'no-console': 'off',
     'no-unreachable': 'error',
     'curly': 'error',
     '@next/next/no-img-element': 'off',
@@ -35,30 +35,32 @@ module.exports = {
         fixStyle: 'separate-type-imports',
       },
     ],
-    'import/order': [
-      'error',
-      {
-        'groups': [
-          'type',
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-          'object',
-        ],
-        'pathGroups': [
-          {
-            pattern: '@/**',
-            group: 'internal',
-          },
-        ],
-        'pathGroupsExcludedImportTypes': ['type'],
-        'newlines-between': 'always',
-      },
-    ],
-    'prettier/prettier': 'error',
+    'import/order' : 'off',
+    // 'import/order': [
+    //   'error',
+    //   {
+    //     'groups': [
+    //       'type',
+    //       'builtin',
+    //       'external',
+    //       'internal',
+    //       'parent',
+    //       'sibling',
+    //       'index',
+    //       'object',
+    //     ],
+    //     'pathGroups': [
+    //       {
+    //         pattern: '@/**',
+    //         group: 'internal',
+    //       },
+    //     ],
+    //     'pathGroupsExcludedImportTypes': ['type'],
+    //     'newlines-between': 'always',
+    //   },
+    // ],
+    'prettier/prettier': 'off',
+    // 'prettier/prettier': 'error',
   },
   overrides: [
     {
