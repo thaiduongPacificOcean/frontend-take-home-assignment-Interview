@@ -129,9 +129,11 @@ export const TodoList = ({ filter }: TodoListFilterProps) => {
                 {todo.body}
               </label>
             </div>
+
             <button onClick={() => handleDelete(todo.id)} className="ml-3 text-red-500 hover:text-red-700 focus:outline-none">
               <XMarkIcon className="h-8 w-8" />
             </button>
+          
           </div>
         </li>
       ))}

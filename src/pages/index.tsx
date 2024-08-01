@@ -54,19 +54,19 @@ const Filter = ({ setFilter, currentFilter }: FilterProps) => {
     <Tabs.Root defaultValue="all" onValueChange={handleFilterChange}>
       <Tabs.List className='flex justify-start'>
         <Tabs.Trigger
-          className={`flex items-center justify-center h-9 p-5 rounded-full mr-2 font-sans ${currentFilter === 'all' ? 'bg-gray-700 text-white' : 'border border-gray-200 text-gray-700'}`}
+          className={`flex items-center justify-center h-9 p-5 rounded-full mr-2 font-sans font-bold ${currentFilter === 'all' ? 'bg-gray-700 text-white' : 'border border-gray-200 text-gray-700'}`}
           value="all"
         >
           <p className='text-sm'>All</p>
         </Tabs.Trigger>
         <Tabs.Trigger
-          className={`flex items-center justify-center h-9 p-5 rounded-full mr-2 font-sans ${currentFilter === 'pending' ? 'bg-gray-700 text-white' : 'border border-gray-200 text-gray-700'}`}
+          className={`flex items-center justify-center h-9 p-5 rounded-full mr-2 font-sans font-bold ${currentFilter === 'pending' ? 'bg-gray-700 text-white' : 'border border-gray-200 text-gray-700'}`}
           value="pending"
         >
           <p className='text-sm'>Pending</p>
         </Tabs.Trigger>
         <Tabs.Trigger
-          className={`flex items-center justify-center h-9 p-5 rounded-full mr-2 font-sans ${currentFilter === 'completed' ? 'bg-gray-700 text-white' : 'border border-gray-200 text-gray-700'}`}
+          className={`flex items-center justify-center h-9 p-5 rounded-full mr-2 font-sans font-bold ${currentFilter === 'completed' ? 'bg-gray-700 text-white' : 'border border-gray-200 text-gray-700'}`}
           value="completed"
         >
           <p className='text-sm'>Completed</p>
